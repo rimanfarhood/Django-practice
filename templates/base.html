@@ -23,7 +23,10 @@
 </head>
 <body>
     {% include 'includes/header.html' %}
-
-     <h1>Medication</h1>
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+    {% include 'includes/footer.html' %}
 </body>
 </html>
