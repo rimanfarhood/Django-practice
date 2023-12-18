@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,500&display=swap');
+
+:root {
+    /* Fonts */
+    --font-family: 'Playfair Display', serif;
+
+    /* Colors */
+    --black: #000000;
+    --green: #64c04b;
+    --white: #fff; 
+    --burgundy: #3c1515;
+    --off-White: #f6f6f6;
+
+    /* Utils */
+    --box-shadows-green: 1px -1px 7px #64c04b;
+    --box-shadows-off-white: 1px -1px 7px #f6f6f6;
+    --border: 0.5px solid #000;
+    
+}
+
+/* Main */
+
+html, body {
+    background-color: var(--black);
+    color: var(--off-White);
+    min-height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-family);
+}
+
+main {
+    flex: 1 0 auto;
+    background-color: var(--off-White);
+}
+
+/* Footer */
+
+footer {
+    flex-shrink: 0;
+}
+
+/* Headers */
+
+
+#container, .navbar {
+    box-shadow: var(--box-shadows-black);
+    color: var(--black);
+}
+
+a.nav-link, a.nav-link.active {
+    color: var(--black);
+}
+
+.navbar-brand {
+    font-weight: 500;
+    font-size: 23px;
+    letter-spacing: 1.5px;
+}
+
+button.navbar-toggler {
+    color: var(--black);
+    border: var(--border);
+}
